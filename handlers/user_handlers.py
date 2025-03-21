@@ -324,12 +324,12 @@ async def show_full_course(callback: CallbackQuery):
     
     "👉<b><a href='https://clck.ru/3J56Zj'>ОЗНАКОМИТЬСЯ С ПОЛНОЙ ПРОГРАММОЙ ОБУЧЕНИЯ</a></b>\n\n"
     
-    "С помощью моей программы свыше 70 человек смогли создать прибыльные магазины — <a href='https://clck.ru/3J56bU'>отзывы учеников</a>\n\n"
+    "С помощью моей программы свыше 70 человек смогли создать прибыльные магазины!"
     
-    "🛒 <b>Приобрести:</b> https://t.me/Hogops"
 )
     builder = InlineKeyboardBuilder()
     builder.row(InlineKeyboardButton(text="Забрать полный курс! 🚀", url="https://t.me/Hogops"))
+    builder.row(InlineKeyboardButton(text="Отзывы учеников! 🚀", url="https://clck.ru/3J56bU"))
     
     await callback.message.answer_photo(
         photo=course_photo_id,
